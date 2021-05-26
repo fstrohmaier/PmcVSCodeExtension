@@ -2,7 +2,9 @@
     "name": "pmc",
     "displayName": "Promicon",
     "description": "Promicon",
-    "version": "0.0.1",
+    "version": "1.0.0",
+    "publisher": "eberhard-ag",
+    "repository": "https://github.com/fstrohmaier/PmcVSCodeExtension",
     "engines": {
         "vscode": "^1.37.0"
     },
