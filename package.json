@@ -1,0 +1,25 @@
+{
+    "name": "pmc",
+    "displayName": "Promicon",
+    "description": "Promicon",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.37.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "pmc",
+            "aliases": ["Promicon", "pmc"],
+            "extensions": [".as"],
+            "configuration": "./languages/language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "pmc",
+            "scopeName": "source.promicon",
+            "path": "./syntaxes/pmc.tmLanguage.json"
+        }]
+    }
+}

@@ -1,0 +1,41 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Promicon",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+            "include": "#comments"
+        }	
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.pmc",
+				"match": "\\b(ifeq|ifne|ifle|ifge|iflt|ifgt|endif|load|call|ret|jump|seq|sge|add|sub|mul|div|mod|abs|and|or|neg|cmp|jgt|jeq|jne|jlt|test|cne|define)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.pmc",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.pmc",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+            "patterns": [{
+                "name": "comment.line.number-sign.pmc",
+                "match": "!.*"
+            }]
+        }
+	},
+	"scopeName": "source.promicon"
+}
